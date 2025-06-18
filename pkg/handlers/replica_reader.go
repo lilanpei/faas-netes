@@ -22,11 +22,11 @@ import (
 
 // MaxReplicas licensed for OpenFaaS CE is 5/5
 // a license for OpenFaaS Standard is required to increase this limit.
-const MaxReplicas = 5
+const MaxReplicas = 50
 
 // MaxFunctions licensed for OpenFaaS CE is 15
 // a license for OpenFaaS Standard is required to increase this limit.
-const MaxFunctions = 15
+const MaxFunctions = 150
 
 // MakeReplicaReader reads the amount of replicas for a deployment
 func MakeReplicaReader(defaultNamespace string, lister v1.DeploymentLister) http.HandlerFunc {
